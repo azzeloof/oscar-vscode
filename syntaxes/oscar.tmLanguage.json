@@ -1,0 +1,9 @@
+{
+	"scopeName": "oscar.injection",
+	"patterns": [
+		{
+			"name": "entity.name.function.oscar",
+			"match": "\\b(synth|patch|delete_synth|delete_patch|stop_all|list_synths|list_patches|set_master_volume|get_master_volume|get_or_create_synth|get_or_create_patch)\\b(?=\\s*\\()"
+		}
+	]
+}

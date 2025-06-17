@@ -1,0 +1,57 @@
+{
+  "name": "oscar-vscode",
+  "displayName": "Oscar",
+  "description": "An interface for live coding vector visuals in the Oscar language.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:oscar-vscode.evaluateBlock"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "oscar-vscode.evaluateBlock",
+      "title": "Oscar: Evaluate Line/Block"
+    }],
+    "keybindings": [{
+      "command": "oscar-vscode.evaluateBlock",
+      "key": "Ctrl+enter",
+      "mac": "cmd+enter",
+      "when": "editorTextFocus && editorLangId == 'python'"
+    }],
+    "files.associations": {
+      "*.os": "python"
+    },
+    "grammars": [{
+      "scopeName": "oscar.injection",
+      "path": "./syntaxes/oscar.tmLanguage.json",
+      "injectTo": ["source.python"]
+    }],
+
+    "tokenColors": [{
+      "scope": "entity.name.function.oscar",
+      "settings": {
+        "foreground": "#FFD700",
+        "fontStyle": "bold"
+      }
+    }]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.95.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.25.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
