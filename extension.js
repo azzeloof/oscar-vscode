@@ -53,7 +53,6 @@ const highlightDecorationType = vscode.window.createTextEditorDecorationType({
 async function activate(context) {
     console.log('Congratulations, your extension "oscar-vscode" is now active!');
 
-    // --- ADDED BACK: Check for and prompt to configure file association ---
     const filesConfig = vscode.workspace.getConfiguration('files');
     const associations = filesConfig.get('associations');
 

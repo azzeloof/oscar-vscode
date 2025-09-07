@@ -1,8 +1,8 @@
 {
   "name": "oscar-vscode",
-  "displayName": "Oscar",
-  "description": "An interface for live coding vector visuals in the Oscar language.",
-  "version": "0.0.1",
+  "displayName": "OSCAR",
+  "description": "An interface for live coding vector visuals in the OSCAR language.",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.95.0"
   },

@@ -5,62 +5,27 @@ OSCAR is a live coding environment for creating visuals using sound waves, which
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+*   **Evaluate Code:** Selectively evaluate lines or blocks of Oscar code and send them to the OSCAR server for live rendering.
+*   **Syntax Highlighting:** Provides syntax highlighting for the Oscar language (`.os` files).
+*   **Automatic Block Selection:** If no text is selected, the extension intelligently determines the current code block to evaluate based on indentation and bracket matching.
 
-For example if there is an image subfolder under your extension project workspace:
+## How to Use
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1.  Install the [OSCAR Server](https://github.com/azzeloof/oscar-language/).
+2.  Open a `.os` file.
+3.  Use the keyboard shortcut `Ctrl+Enter` (`Cmd+Enter` on macOS) to evaluate the current line or selected block of code.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+This extension requires the [OSCAR Server](https://github.com/azzeloof/oscar-language/) to be running in the background.
 
-## Extension Settings
+## Configuration
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+For the best experience, this extension will prompt you to associate `.os` files with the Python language. This enables features like auto-indentation and leverages Python's syntax for a better editing experience.
 
-For example:
+## Commands and Keybindings
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+*   **`Oscar: Evaluate Line/Block`**: `Ctrl+Enter` (Windows/Linux) or `Cmd+Enter` (macOS)
+    *   Evaluates the current line or selected block of code.
 
 **Enjoy!**
