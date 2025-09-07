@@ -1,6 +1,7 @@
-# oscar-vscode README
+# OSCAR (VS Code Extension)
+**OS**cilloscope **C**ode **A**nd **R**enderer
 
-This extension is for live coding vector oscilloscope visuals in the Oscar language.
+OSCAR is a live coding environment for creating visuals using sound waves, which are plotted on an x-y oscilloscope. For example, two offset sine waves on different audio channels produce a circle. This extension is used for selectivley evaluating lines of code and sending them to the [OSCAR Server](https://github.com/azzeloof/oscar-language/) for evaluation.
 
 ## Features
 
